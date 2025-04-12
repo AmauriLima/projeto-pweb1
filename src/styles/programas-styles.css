@@ -1,0 +1,157 @@
+/* Estilos específicos para a página de Programas e Projetos */
+
+/* Estilos para seções de programas */
+.program-section {
+    padding: 4rem 0;
+}
+
+.program-section:nth-child(even) {
+    background-color: var(--light-grey);
+}
+
+.program-section h2 {
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+}
+
+.program-section .section-divider {
+    margin-left: 0;
+    margin-bottom: 2rem;
+}
+
+/* Estilos para cards de programas */
+.program-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.program-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.program-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.program-card p {
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
+}
+
+.program-card .btn {
+    margin-top: 1rem;
+}
+
+/* Estilos para ícones de programas */
+.program-icon {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+/* Estilos para listas em programas */
+.program-section ul {
+    margin-bottom: 1.5rem;
+}
+
+.program-section ul li {
+    margin-bottom: 0.5rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.program-section ul li:before {
+    content: "•";
+    color: var(--primary-color);
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+/* Estilos para imagens em programas */
+.program-image {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.program-image img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+}
+
+.program-image:hover img {
+    transform: scale(1.05);
+}
+
+/* Estilos para seção de introdução */
+.programs-intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 3rem;
+}
+
+.programs-intro p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Estilos para seção de CTA */
+.programs-cta {
+    text-align: center;
+    padding: 4rem 0;
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.programs-cta h2 {
+    color: #fff;
+    margin-bottom: 1.5rem;
+}
+
+.programs-cta p {
+    max-width: 700px;
+    margin: 0 auto 2rem;
+    font-size: 1.1rem;
+}
+
+.programs-cta .btn {
+    background-color: #fff;
+    color: var(--primary-color);
+    border: none;
+    padding: 0.8rem 2rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.programs-cta .btn:hover {
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+
+/* Responsividade */
+@media (max-width: 992px) {
+    .program-card {
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .program-section {
+        padding: 3rem 0;
+    }
+    
+    .program-card {
+        padding: 1.5rem;
+    }
+    
+    .program-icon {
+        font-size: 2rem;
+    }
+} 

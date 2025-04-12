@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursos | Fundação COMP+</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/recursos-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="scripts/script.js" defer></script>
+</head>
+<body>
+    <!-- Cabeçalho e Menu de Navegação -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <h1>COMP<span class="plus">+</span></h1>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre Nós</a></li>
+                    <li><a href="programas.html">Programas e Projetos</a></li>
+                    <li><a href="eventos.html">Eventos</a></li>
+                    <li><a href="recursos.html" class="active">Recursos</a></li>
+                    <li><a href="parcerias.html">Parcerias</a></li>
+                    <li><a href="noticias.html">Notícias</a></li>
+                    <li><a href="doacoes.html" class="btn-donate">Doações</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Seção Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="page-hero-content">
+                <h1>Recursos</h1>
+                <p>Biblioteca de conhecimento, ferramentas e publicações para a comunidade de computação</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Biblioteca de Recursos -->
+    <section class="resources-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Biblioteca de Recursos</h2>
+                <div class="section-divider"></div>
+                <p>Acesse materiais educacionais, artigos, whitepapers, vídeos e apresentações</p>
+            </div>
+            
+            <div class="resources-filter">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="article">Artigos</button>
+                <button class="filter-btn" data-filter="video">Vídeos</button>
+                <button class="filter-btn" data-filter="paper">Whitepapers</button>
+                <button class="filter-btn" data-filter="presentation">Apresentações</button>
+            </div>
+
+            <div class="resources-grid">
+                <div class="resource-card" data-category="article">
+                    <div class="resource-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <div class="resource-content">
+                        <h3>Tendências da Inteligência Artificial no Brasil</h3>
+                        <p>Análise do cenário atual e perspectivas futuras da IA no mercado brasileiro.</p>
+                        <div class="resource-meta">
+                            <span><i class="fas fa-calendar-alt"></i> Mar 2025</span>
+                            <span><i class="fas fa-user"></i> Dr. Paulo Mendes</span>
+                        </div>
+                        <a href="#" class="btn-link">Ler artigo <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="resource-card" data-category="video">
+                    <div class="resource-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <div class="resource-content">
+                        <h3>Introdução à Ciência de Dados</h3>
+                        <p>Série de vídeos abordando conceitos fundamentais e aplicações práticas.</p>
+                        <div class="resource-meta">
+                            <span><i class="fas fa-calendar-alt"></i> Fev 2025</span>
+                            <span><i class="fas fa-clock"></i> 10 episódios</span>
+                        </div>
+                        <a href="#" class="btn-link">Assistir série <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="resource-card" data-category="paper">
+                    <div class="resource-icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </div>
+                    <div class="resource-content">
+                        <h3>Segurança Cibernética em Ambientes IoT</h3>
+                        <p>Estudo sobre vulnerabilidades e soluções para dispositivos conectados.</p>
+                        <div class="resource-meta">
+                            <span><i class="fas fa-calendar-alt"></i> Jan 2025</span>
+                            <span><i class="fas fa-file-alt"></i> 42 páginas</span>
+                        </div>
+                        <a href="#" class="btn-link">Baixar PDF <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="resource-card" data-category="presentation">
+                    <div class="resource-icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <div class="resource-content">
+                        <h3>Computação Quântica: Possibilidades e Desafios</h3>
+                        <p>Apresentação do simpósio realizado na conferência anual da COMP+.</p>
+                        <div class="resource-meta">
+                            <span><i class="fas fa-calendar-alt"></i> Dez 2024</span>
+                            <span><i class="fas fa-chalkboard"></i> 60 slides</span>
+                        </div>
+                        <a href="#" class="btn-link">Ver apresentação <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="resource-card" data-category="article">
+                    <div class="resource-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <div class="resource-content">
+                        <h3>Desenvolvimento Sustentável em TI</h3>
+                        <p>Práticas para redução do impacto ambiental na indústria de tecnologia.</p>
+                        <div class="resource-meta">
+                            <span><i class="fas fa-calendar-alt"></i> Nov 2024</span>
+                            <span><i class="fas fa-user"></i> Dra. Ana Silva</span>
+                        </div>
+                        <a href="#" class="btn-link">Ler artigo <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="resource-card" data-category="video">
+                    <div class="resource-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <div class="resource-content">
+                        <h3>Workshop: Desenvolvimento de Aplicações com React</h3>
+                        <p>Gravação completa do workshop realizado durante o Hackathon COMP+ 2024.</p>
+                        <div class="resource-meta">
+                            <span><i class="fas fa-calendar-alt"></i> Out 2024</span>
+                            <span><i class="fas fa-clock"></i> 4 horas</span>
+                        </div>
+                        <a href="#" class="btn-link">Assistir workshop <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="view-all">
+                <a href="#" class="btn btn-outline">Ver Mais Recursos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ferramentas e Tutoriais -->
+    <section class="tools-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Ferramentas e Tutoriais</h2>
+                <div class="section-divider"></div>
+                <p>Links úteis e guias passo a passo para aprimorar seus conhecimentos</p>
+            </div>
+
+            <div class="tools-grid">
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>IDE Online para Programação</h3>
+                    <p>Ambiente de desenvolvimento integrado para praticar programação em várias linguagens.</p>
+                    <div class="tool-tags">
+                        <span>Desenvolvimento</span>
+                        <span>Iniciantes</span>
+                    </div>
+                    <a href="#" class="btn btn-secondary">Acessar Ferramenta</a>
+                </div>
+
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Framework de Machine Learning</h3>
+                    <p>Biblioteca completa para desenvolvimento de modelos de aprendizado de máquina.</p>
+                    <div class="tool-tags">
+                        <span>IA</span>
+                        <span>Avançado</span>
+                    </div>
+                    <a href="#" class="btn btn-secondary">Acessar Ferramenta</a>
+                </div>
+
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>Tutorial: Criando APIs RESTful</h3>
+                    <p>Guia completo sobre design, implementação e documentação de APIs.</p>
+                    <div class="tool-tags">
+                        <span>Back-end</span>
+                        <span>Intermediário</span>
+                    </div>
+                    <a href="#" class="btn btn-secondary">Ver Tutorial</a>
+                </div>
+
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Ferramenta de Análise de Segurança</h3>
+                    <p>Scanner para identificação de vulnerabilidades em aplicações web.</p>
+                    <div class="tool-tags">
+                        <span>Segurança</span>
+                        <span>Profissional</span>
+                    </div>
+                    <a href="#" class="btn btn-secondary">Acessar Ferramenta</a>
+                </div>
+
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Tutorial: Desenvolvimento Mobile Multiplataforma</h3>
+                    <p>Aprenda a criar aplicativos para iOS e Android com uma única base de código.</p>
+                    <div class="tool-tags">
+                        <span>Mobile</span>
+                        <span>Intermediário</span>
+                    </div>
+                    <a href="#" class="btn btn-secondary">Ver Tutorial</a>
+                </div>
+
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Plataforma de Visualização de Dados</h3>
+                    <p>Ferramenta interativa para exploração e visualização de grandes volumes de dados.</p>
+                    <div class="tool-tags">
+                        <span>Data Science</span>
+                        <span>Todos os níveis</span>
+                    </div>
+                    <a href="#" class="btn btn-secondary">Acessar Ferramenta</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publicações -->
+    <section class="publications-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Publicações</h2>
+                <div class="section-divider"></div>
+                <p>Acesse as publicações da Fundação COMP+ e de nossos parceiros</p>
+            </div>
+
+            <div class="publications-list">
+                <div class="publication-item">
+                    <div class="publication-cover">
+                        <img src="/api/placeholder/160/220" alt="Capa do relatório anual">
+                    </div>
+                    <div class="publication-info">
+                        <h3>Relatório Anual 2024: O Estado da Computação no Brasil</h3>
+                        <p>Relatório completo sobre o panorama da área de computação no Brasil, com dados sobre mercado, educação e pesquisa.</p>
+                        <div class="publication-meta">
+                            <span><i class="fas fa-calendar-alt"></i> Dezembro 2024</span>
+                            <span><i class="fas fa-file-alt"></i> 78 páginas</span>
+                            <span><i class="fas fa-language"></i> Português</span>
+                        </div>
+                        <div class="publication-actions">
+                            <a href="#" class="btn btn-sm btn-primary">Baixar PDF</a>
+                            <a href="#" class="btn btn-sm btn-outline">Ler Online</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="publication-item">
+                    <div class="publication-cover">
+                        <img src="/api/placeholder/160/220" alt="Capa do livro">
+                    </div>
+                    <div class="publication-info">
+                        <h3>Fundamentos de Inteligência Artificial: Uma Abordagem Prática</h3>
+                        <p>Livro educativo desenvolvido pela equipe da COMP+ em parceria com especialistas da indústria e academia.</p>
+                        <div class="publication-meta">
+                            <span><i class="fas fa-calendar-alt"></i> Outubro 2024</span>
+                            <span><i class="fas fa-file-alt"></i> 312 páginas</span>
+                            <span><i class="fas fa-language"></i> Português/Inglês</span>
+                        </div>
+                        <div class="publication-actions">
+                            <a href="#" class="btn btn-sm btn-primary">Comprar</a>
+                            <a href="#" class="btn btn-sm btn-outline">Amostra Gratuita</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="publication-item">
+                    <div class="publication-cover">
+                        <img src="/api/placeholder/160/220" alt="Capa da revista">
+                    </div>
+                    <div class="publication-info">
+                        <h3>Revista COMP+ Edição 18: Tecnologias Emergentes</h3>
+                        <p>Publicação trimestral com artigos, entrevistas e análises sobre as tendências mais recentes em computação.</p>
+                        <div class="publication-meta">
+                            <span><i class="fas fa-calendar-alt"></i> Agosto 2024</span>
+                            <span><i class="fas fa-file-alt"></i> 64 páginas</span>
+                            <span><i class="fas fa-language"></i> Português</span>
+                        </div>
+                        <div class="publication-actions">
+                            <a href="#" class="btn btn-sm btn-primary">Baixar PDF</a>
+                            <a href="#" class="btn btn-sm btn-outline">Ler Online</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="view-all">
+                <a href="#" class="btn btn-outline">Ver Todas as Publicações</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Mantenha-se Informado</h2>
+                <p>Receba nossos recursos, ferramentas e publicações diretamente no seu e-mail</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Seu e-mail" required>
+                    <button type="submit" class="btn btn-primary">Inscrever-se</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3>COMP<span class="plus">+</span></h3>
+                    <p>Apoiando a inovação e o desenvolvimento tecnológico desde 2012.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="sobre.html">Sobre Nós</a></li>
+                        <li><a href="programas.html">Programas</a></li>
+                        <li><a href="eventos.html">Eventos</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contato</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Av. Aprígio Veloso, 882, Campina Grande - PB</p>
+                    <p><i class="fas fa-phone"></i> (83) 3333-3333</p>
+                    <p><i class="fas fa-envelope"></i> contato@compmais.org.br</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Fundação COMP+ | Todos os direitos reservados</p>
+                <div class="footer-links-bottom">
+                    <a href="#">Política de Privacidade</a>
+                    <a href="#">Termos de Uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

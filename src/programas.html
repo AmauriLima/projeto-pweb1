@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programas e Projetos | Fundação COMP+</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/programas-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="scripts/script.js" defer></script>
+</head>
+<body>
+    <!-- Cabeçalho e Menu de Navegação -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <h1>COMP<span class="plus">+</span></h1>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre Nós</a></li>
+                    <li><a href="programas.html" class="active">Programas e Projetos</a></li>
+                    <li><a href="eventos.html">Eventos</a></li>
+                    <li><a href="recursos.html">Recursos</a></li>
+                    <li><a href="parcerias.html">Parcerias</a></li>
+                    <li><a href="noticias.html">Notícias</a></li>
+                    <li><a href="doacoes.html" class="btn-donate">Doações</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section - Programas -->
+    <section class="hero" style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/api/placeholder/1920/800') center/cover no-repeat; height: 50vh;">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Programas e Projetos</h2>
+                <p>Conheça as iniciativas da Fundação COMP+ que estão transformando o cenário da computação no Brasil</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Introdução aos Programas -->
+    <section class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nossas Iniciativas</h2>
+                <div class="section-divider"></div>
+                <p>A Fundação COMP+ desenvolve e apoia uma variedade de programas e projetos focados em educação, pesquisa, inovação e inclusão na área de computação.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bolsas de Estudo -->
+    <section id="bolsas" class="programs-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Bolsas de Estudo</h2>
+                    <div class="section-divider" style="margin-left: 0;"></div>
+                    <p>Nosso programa de bolsas de estudo oferece apoio financeiro a estudantes talentosos em cursos de graduação e pós-graduação na área de computação.</p>
+                    <p>O objetivo é incentivar a excelência acadêmica e a pesquisa inovadora, permitindo que os bolsistas se dediquem integralmente aos estudos e desenvolvam projetos relevantes para o avanço da tecnologia no Brasil.</p>
+                    <h3>Benefícios</h3>
+                    <ul style="list-style: disc; padding-left: 20px; margin-bottom: 1rem;">
+                        <li>Auxílio financeiro mensal</li>
+                        <li>Mentoria com profissionais reconhecidos</li>
+                        <li>Acesso a eventos e treinamentos exclusivos</li>
+                        <li>Oportunidades de networking com empresas parceiras</li>
+                    </ul>
+                    <h3>Como se candidatar</h3>
+                    <p>As inscrições para o programa de bolsas são realizadas anualmente, com editais publicados no início de cada semestre letivo. Os candidatos passam por um processo seletivo que avalia desempenho acadêmico, potencial de pesquisa e comprometimento com os valores da fundação.</p>
+                    <a href="#" class="btn btn-primary">Saiba mais sobre o processo seletivo</a>
+                </div>
+                <div class="about-image">
+                    <img src="/api/placeholder/600/400" alt="Estudantes bolsistas da COMP+">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hackathons -->
+    <section id="hackathons" class="about-section" style="background-color: var(--light-grey);">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="/api/placeholder/600/400" alt="Hackathon COMP+">
+                </div>
+                <div class="about-text">
+                    <h2>Hackathons</h2>
+                    <div class="section-divider" style="margin-left: 0;"></div>
+                    <p>Os Hackathons COMP+ são competições intensivas de programação e desenvolvimento de soluções, onde equipes multidisciplinares trabalham colaborativamente para resolver problemas reais usando tecnologia.</p>
+                    <p>Realizamos hackathons temáticos ao longo do ano, abordando desafios em áreas como saúde, educação, mobilidade urbana, sustentabilidade e inclusão digital.</p>
+                    <h3>Por que participar?</h3>
+                    <ul style="list-style: disc; padding-left: 20px; margin-bottom: 1rem;">
+                        <li>Desenvolvimento de habilidades técnicas e soft skills</li>
+                        <li>Networking com profissionais do mercado e academia</li>
+                        <li>Premiações para as melhores soluções</li>
+                        <li>Possibilidade de incubação de projetos promissores</li>
+                    </ul>
+                    <p>Os hackathons são abertos a estudantes, profissionais e entusiastas de tecnologia, com inscrições realizadas por equipe ou individualmente.</p>
+                    <a href="eventos.html#hackathon-cidades" class="btn btn-secondary">Próximo Hackathon</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Treinamentos -->
+    <section id="treinamentos" class="programs-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Treinamentos e Capacitação</h2>
+                    <div class="section-divider" style="margin-left: 0;"></div>
+                    <p>A Fundação COMP+ oferece cursos, workshops e programas de capacitação em tecnologias emergentes, metodologias ágeis, gestão de projetos e empreendedorismo digital.</p>
+                    <p>Nossos treinamentos são ministrados por especialistas renomados e combinam teoria e prática para garantir uma experiência de aprendizado completa e aplicável ao mercado.</p>
+                    <h3>Modalidades</h3>
+                    <ul style="list-style: disc; padding-left: 20px; margin-bottom: 1rem;">
+                        <li>Workshops presenciais intensivos</li>
+                        <li>Cursos online com tutoria personalizada</li>
+                        <li>Bootcamps imersivos</li>
+                        <li>Webinars e palestras temáticas</li>
+                    </ul>
+                    <h3>Áreas de conhecimento</h3>
+                    <p>Inteligência Artificial, Ciência de Dados, Desenvolvimento Web e Mobile, Segurança da Informação, Cloud Computing, IoT, entre outras áreas em constante evolução.</p>
+                    <a href="#" class="btn btn-primary">Ver próximos treinamentos</a>
+                </div>
+                <div class="about-image">
+                    <img src="/api/placeholder/600/400" alt="Treinamento técnico da COMP+">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Inclusão Digital -->
+    <section id="inclusao" class="about-section" style="background-color: var(--light-grey);">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="/api/placeholder/600/400" alt="Projeto de inclusão digital">
+                </div>
+                <div class="about-text">
+                    <h2>Inclusão Digital</h2>
+                    <div class="section-divider" style="margin-left: 0;"></div>
+                    <p>Os projetos de inclusão digital da Fundação COMP+ visam democratizar o acesso à tecnologia e ao conhecimento em computação, especialmente em comunidades vulneráveis e regiões de baixo desenvolvimento tecnológico.</p>
+                    <p>Atuamos em parceria com escolas públicas, ONGs e governos locais para criar oportunidades de aprendizado e desenvolvimento profissional para jovens e adultos.</p>
+                    <h3>Principais iniciativas</h3>
+                    <ul style="list-style: disc; padding-left: 20px; margin-bottom: 1rem;">
+                        <li>Laboratórios de informática em escolas públicas</li>
+                        <li>Cursos básicos de programação para jovens</li>
+                        <li>Formação em habilidades digitais para empreendedores locais</li>
+                        <li>Mentoria para mulheres e grupos sub-representados na tecnologia</li>
+                    </ul>
+                    <h3>Impacto</h3>
+                    <p>Desde 2015, nossos projetos de inclusão digital já beneficiaram mais de 15.000 pessoas em 32 municípios brasileiros, contribuindo para a formação de uma nova geração de profissionais e entusiastas da tecnologia.</p>
+                    <a href="#" class="btn btn-secondary">Conheça nossas histórias de sucesso</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projetos de Pesquisa -->
+    <section id="pesquisa" class="programs-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Projetos de Pesquisa</h2>
+                    <div class="section-divider" style="margin-left: 0;"></div>
+                    <p>A Fundação COMP+ apoia projetos de pesquisa acadêmica e aplicada em áreas estratégicas da computação, facilitando a integração entre universidades, indústria e governo.</p>
+                    <p>Nosso suporte administrativo e financeiro permite que pesquisadores concentrem seus esforços no desenvolvimento científico e tecnológico, com foco em inovação e solução de problemas reais.</p>
+                    <h3>Áreas prioritárias</h3>
+                    <ul style="list-style: disc; padding-left: 20px; margin-bottom: 1rem;">
+                        <li>Inteligência Artificial e Aprendizado de Máquina</li>
+                        <li>Segurança Cibernética</li>
+                        <li>Tecnologias Verdes e Sustentabilidade</li>
+                        <li>Computação Quântica</li>
+                        <li>Blockchain e Aplicações Descentralizadas</li>
+                    </ul>
+                    <h3>Como submeter um projeto</h3>
+                    <p>Pesquisadores vinculados a Instituições Científicas e Tecnológicas (ICTs) e Universidades podem submeter propostas de projetos para análise e possível apoio da fundação. O processo de seleção considera relevância científica, potencial de impacto e alinhamento com os objetivos estratégicos da COMP+.</p>
+                    <a href="#" class="btn btn-primary">Saiba como submeter um projeto</a>
+                </div>
+                <div class="about-image">
+                    <img src="/api/placeholder/600/400" alt="Pesquisadores em laboratório">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Incubadora de Startups -->
+    <section id="incubadora" class="about-section" style="background-color: var(--light-grey);">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="/api/placeholder/600/400" alt="Startup incubada na COMP+">
+                </div>
+                <div class="about-text">
+                    <h2>Incubadora de Startups</h2>
+                    <div class="section-divider" style="margin-left: 0;"></div>
+                    <p>A Incubadora COMP+ é um programa de apoio ao desenvolvimento de startups inovadoras na área de tecnologia, fornecendo estrutura, mentoria e acesso a investidores para empreendedores em fase inicial.</p>
+                    <p>Nosso objetivo é transformar ideias promissoras em negócios sustentáveis, contribuindo para o fortalecimento do ecossistema de inovação no Brasil.</p>
+                    <h3>O que oferecemos</h3>
+                    <ul style="list-style: disc; padding-left: 20px; margin-bottom: 1rem;">
+                        <li>Espaço físico para desenvolvimento do projeto</li>
+                        <li>Mentorias técnicas e de negócios</li>
+                        <li>Acesso a rede de investidores e parceiros</li>
+                        <li>Suporte jurídico e contábil</li>
+                        <li>Conexão com pesquisadores e laboratórios universitários</li>
+                    </ul>
+                    <h3>Processo seletivo</h3>
+                    <p>A seleção de startups para a incubadora acontece semestralmente, com chamadas públicas divulgadas em nosso site e redes sociais. Os projetos são avaliados por um comitê multidisciplinar que considera inovação, viabilidade técnica e potencial de mercado.</p>
+                    <a href="#" class="btn btn-secondary">Inscreva sua startup</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA - Participe -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Quer fazer parte das nossas iniciativas?</h2>
+                <p>Entre em contato conosco para descobrir como você ou sua organização podem participar dos programas e projetos da Fundação COMP+</p>
+                <a href="contato.html" class="btn btn-primary" style="margin-top: 1.5rem;">Entre em Contato</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3>COMP<span class="plus">+</span></h3>
+                    <p>Apoiando a inovação e o desenvolvimento tecnológico desde 2012.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="sobre.html">Sobre Nós</a></li>
+                        <li><a href="programas.html">Programas</a></li>
+                        <li><a href="eventos.html">Eventos</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contato</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Av. Aprígio Veloso, 882, Campina Grande - PB</p>
+                    <p><i class="fas fa-phone"></i> (83) 3333-3333</p>
+                    <p><i class="fas fa-envelope"></i> contato@compmais.org.br</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Fundação COMP+ | Todos os direitos reservados</p>
+                <div class="footer-links-bottom">
+                    <a href="#">Política de Privacidade</a>
+                    <a href="#">Termos de Uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
