@@ -134,6 +134,17 @@ a:hover {
   color: var(--white-color);
 }
 
+/* Adicionando estilo específico para botões outline dentro da newsletter section */
+.newsletter-section .btn-outline {
+  color: var(--white-color);
+  border-color: var(--white-color);
+}
+
+.newsletter-section .btn-outline:hover {
+  background-color: var(--white-color);
+  color: var(--primary-color);
+}
+
 .btn-link {
   color: var(--primary-color);
   font-weight: 600;

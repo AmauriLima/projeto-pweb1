@@ -129,4 +129,31 @@ document.addEventListener('DOMContentLoaded', function() {
           });
       });
   }
+
+  // Funcionalidade do FAQ
+  const faqItems = document.querySelectorAll('.faq-item');
+  if (faqItems.length > 0) {
+      faqItems.forEach(item => {
+          const question = item.querySelector('.faq-question');
+          const answer = item.querySelector('.faq-answer');
+          const toggle = item.querySelector('.faq-toggle');
+          
+          question.addEventListener('click', () => {
+              // Fecha todos os outros itens
+              faqItems.forEach(otherItem => {
+                  if (otherItem !== item) {
+                      otherItem.classList.remove('active');
+                      otherItem.querySelector('.faq-toggle i').classList.remove('fa-minus');
+                      otherItem.querySelector('.faq-toggle i').classList.add('fa-plus');
+                  }
+              });
+              
+              // Toggle do item atual
+              item.classList.toggle('active');
+              const icon = toggle.querySelector('i');
+              icon.classList.toggle('fa-plus');
+              icon.classList.toggle('fa-minus');
+          });
+      });
+  }
 });
