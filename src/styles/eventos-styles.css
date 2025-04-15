@@ -1,8 +1,5 @@
-/* Estilos adicionais para a página de eventos */
-
-/* Banner da página */
 .page-banner {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/api/placeholder/1920/400') center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://placehold.co/1920x400') center/cover no-repeat;
   padding: 5rem 0;
   text-align: center;
   color: var(--white-color);
@@ -19,7 +16,6 @@
   margin: 0 auto;
 }
 
-/* Filtro de eventos */
 .events-filter {
   background-color: var(--light-grey);
   padding: 2rem 0;
@@ -53,7 +49,6 @@
   font-family: 'Open Sans', sans-serif;
 }
 
-/* Calendário e tabs */
 .calendar-section {
   padding: 5rem 0;
 }
@@ -109,7 +104,6 @@
   display: block;
 }
 
-/* Tags para tipos de eventos */
 .event-meta {
   display: flex;
   align-items: center;
@@ -124,7 +118,6 @@
   margin-right: 0;
 }
 
-/* Estilos para o calendário */
 .calendar-container {
   background-color: var(--white-color);
   padding: 2rem;
@@ -159,7 +152,6 @@
   color: var(--grey-color);
 }
 
-/* Estilos para os cards de eventos */
 .events-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
@@ -280,7 +272,6 @@
   color: var(--primary-color);
 }
 
-/* Estilos para eventos em destaque */
 .featured-events-section {
   padding: 5rem 0;
   background-color: var(--light-grey);
@@ -370,7 +361,6 @@
   margin-right: 0.5rem;
 }
 
-/* Estilos para eventos anteriores */
 .past-events-section {
   padding: 5rem 0;
 }
@@ -464,7 +454,6 @@
   color: var(--white-color);
 }
 
-/* Responsividade */
 @media (max-width: 992px) {
   .featured-event {
     flex-direction: column;

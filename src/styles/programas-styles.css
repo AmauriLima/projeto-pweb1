@@ -1,6 +1,3 @@
-/* Estilos específicos para a página de Programas e Projetos */
-
-/* Estilos para seções de programas */
 .program-section {
     padding: 4rem 0;
 }
@@ -19,7 +16,6 @@
     margin-bottom: 2rem;
 }
 
-/* Estilos para cards de programas */
 .program-card {
     background-color: #fff;
     border-radius: 8px;
@@ -47,14 +43,12 @@
     margin-top: 1rem;
 }
 
-/* Estilos para ícones de programas */
 .program-icon {
     font-size: 2.5rem;
     color: var(--primary-color);
     margin-bottom: 1.5rem;
 }
 
-/* Estilos para listas em programas */
 .program-section ul {
     margin-bottom: 1.5rem;
 }
@@ -73,7 +67,6 @@
     font-weight: bold;
 }
 
-/* Estilos para imagens em programas */
 .program-image {
     border-radius: 8px;
     overflow: hidden;
@@ -90,7 +83,6 @@
     transform: scale(1.05);
 }
 
-/* Estilos para seção de introdução */
 .programs-intro {
     text-align: center;
     max-width: 800px;
@@ -102,7 +94,6 @@
     line-height: 1.6;
 }
 
-/* Estilos para seção de CTA */
 .programs-cta {
     text-align: center;
     padding: 4rem 0;
@@ -135,7 +126,6 @@
     color: #fff;
 }
 
-/* Responsividade */
 @media (max-width: 992px) {
     .program-card {
         margin-bottom: 2rem;

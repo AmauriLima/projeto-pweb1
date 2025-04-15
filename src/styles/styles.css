@@ -1,6 +1,5 @@
-/* Base Styles */
 :root {
-  /* Paleta de cores */
+  
   --primary-color: #0066cc;
   --secondary-color: #00aa8d;
   --accent-color: #03c4a1;
@@ -9,7 +8,7 @@
   --light-grey: #f8f9fa;
   --white-color: #ffffff;
   
-  /* Transições */
+  
   --transition: all 0.3s ease;
 }
 
@@ -134,7 +133,7 @@ a:hover {
   color: var(--white-color);
 }
 
-/* Adicionando estilo específico para botões outline dentro da newsletter section */
+
 .newsletter-section .btn-outline {
   color: var(--white-color);
   border-color: var(--white-color);
@@ -167,7 +166,7 @@ a:hover {
   width: 100%;
 }
 
-/* Header and Navigation */
+
 .header {
   position: sticky;
   top: 0;
@@ -257,9 +256,9 @@ a:hover {
   transition: var(--transition);
 }
 
-/* Hero Section */
+
 .hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/api/placeholder/1920/1080') center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://placehold.co/1920x1080') center/cover no-repeat;
   height: 80vh;
   display: flex;
   align-items: center;
@@ -288,7 +287,7 @@ a:hover {
   gap: 1rem;
 }
 
-/* About Section */
+
 .about-section {
   padding: 5rem 0;
 }
@@ -304,7 +303,7 @@ a:hover {
   margin-bottom: 1.5rem;
 }
 
-/* Programs Section */
+
 .programs-section {
   padding: 5rem 0;
   background-color: var(--light-grey);
@@ -350,7 +349,7 @@ a:hover {
   margin-bottom: 1rem;
 }
 
-/* Events Section */
+
 .events-section {
   padding: 5rem 0;
 }
@@ -417,7 +416,7 @@ a:hover {
   margin-top: 2rem;
 }
 
-/* Testimonials Section */
+
 .testimonials-section {
   padding: 5rem 0;
   background-color: var(--light-grey);
@@ -475,7 +474,7 @@ a:hover {
   margin: 0;
 }
 
-/* Newsletter Section */
+
 .newsletter-section {
   padding: 4rem 0;
   background-color: var(--primary-color);
@@ -507,7 +506,7 @@ a:hover {
   border-color: var(--secondary-color);
 }
 
-/* Footer */
+
 .footer {
   background-color: var(--dark-color);
   color: var(--white-color);
@@ -587,7 +586,7 @@ a:hover {
   margin-left: 1.5rem;
 }
 
-/* Responsive Design */
+
 @media (max-width: 992px) {
   .hero h2 {
       font-size: 2.8rem;

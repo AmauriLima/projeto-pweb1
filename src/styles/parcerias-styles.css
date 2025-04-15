@@ -1,9 +1,5 @@
-/* Estilos complementares para a página de Parcerias */
-/* Estes estilos podem ser adicionados ao arquivo styles.css existente */
-
-/* Banner da Página */
 .page-banner {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/api/placeholder/1920/400') center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://placehold.co/1920x400') center/cover no-repeat;
   padding: 5rem 0;
   text-align: center;
   color: var(--white-color);
@@ -20,7 +16,6 @@
   margin: 0 auto;
 }
 
-/* Seção de Parceiros */
 .partners-section {
   padding: 5rem 0;
 }
@@ -67,13 +62,11 @@
   margin-bottom: 0;
 }
 
-/* Depoimentos dos Parceiros */
 .partner-testimonials {
   background-color: var(--light-grey);
   padding: 5rem 0;
 }
 
-/* Como se Tornar um Parceiro */
 .become-partner {
   padding: 5rem 0;
 }
@@ -127,7 +120,6 @@
   margin-top: 3rem;
 }
 
-/* Benefícios das Parcerias */
 .benefits-section {
   padding: 5rem 0;
   background-color: var(--light-grey);
@@ -173,7 +165,6 @@
   margin-bottom: 1rem;
 }
 
-/* Casos de Sucesso */
 .success-cases {
   padding: 5rem 0;
 }
@@ -212,7 +203,6 @@
   font-size: 1.2rem;
 }
 
-/* Perguntas Frequentes */
 .faq-section {
   padding: 5rem 0;
   background-color: var(--light-grey);
@@ -269,7 +259,6 @@
   background-color: rgba(0, 102, 204, 0.05);
 }
 
-/* Responsive Design */
 @media (max-width: 992px) {
   .page-banner h2 {
       font-size: 2.5rem;

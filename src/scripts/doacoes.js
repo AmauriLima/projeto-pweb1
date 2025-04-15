@@ -1,16 +1,13 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Funcionalidade das abas de doação
     const tabButtons = document.querySelectorAll('.donation-tabs .tab-btn');
     const tabContents = document.querySelectorAll('.donation-content .tab-content');
     
     if (tabButtons.length > 0 && tabContents.length > 0) {
         tabButtons.forEach(button => {
             button.addEventListener('click', function() {
-                // Remove active class from all buttons and content
                 tabButtons.forEach(btn => btn.classList.remove('active'));
                 tabContents.forEach(content => content.classList.remove('active'));
                 
-                // Add active class to clicked button and corresponding content
                 this.classList.add('active');
                 const tabId = this.getAttribute('data-tab');
                 document.getElementById(tabId).classList.add('active');
@@ -18,27 +15,21 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Funcionalidade dos botões de valor de doação
     const valueButtons = document.querySelectorAll('.value-btn');
     
     if (valueButtons.length > 0) {
         valueButtons.forEach(button => {
             button.addEventListener('click', function() {
-                // Remove active class from all buttons in the same container
                 const parentContainer = this.closest('.values-grid');
                 const siblingButtons = parentContainer.querySelectorAll('.value-btn');
                 siblingButtons.forEach(btn => btn.classList.remove('active'));
                 
-                // Add active class to clicked button
                 this.classList.add('active');
                 
-                // If it's the custom value button, show input field
                 if (this.classList.contains('custom-value')) {
-                    // Check if custom input already exists
                     let customInput = parentContainer.nextElementSibling;
                     
                     if (!customInput || !customInput.classList.contains('custom-value-input')) {
-                        // Create custom input field
                         customInput = document.createElement('div');
                         customInput.classList.add('custom-value-input');
                         customInput.innerHTML = `
@@ -52,7 +43,6 @@ document.addEventListener('DOMContentLoaded', function() {
                     
                     customInput.style.display = 'block';
                 } else {
-                    // Hide custom input if it exists
                     const customInput = parentContainer.nextElementSibling;
                     if (customInput && customInput.classList.contains('custom-value-input')) {
                         customInput.style.display = 'none';
@@ -62,7 +52,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Funcionalidade do FAQ
     const faqItems = document.querySelectorAll('.faq-item');
     
     if (faqItems.length > 0) {
@@ -70,10 +59,8 @@ document.addEventListener('DOMContentLoaded', function() {
             const question = item.querySelector('.faq-question');
             
             question.addEventListener('click', function() {
-                // Toggle active class on clicked item
                 item.classList.toggle('active');
                 
-                // Close other items
                 faqItems.forEach(otherItem => {
                     if (otherItem !== item) {
                         otherItem.classList.remove('active');
@@ -83,7 +70,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Validação de formulários de doação
     const donationForms = document.querySelectorAll('.donor-form');
     
     if (donationForms.length > 0) {
@@ -91,7 +77,6 @@ document.addEventListener('DOMContentLoaded', function() {
             form.addEventListener('submit', function(e) {
                 e.preventDefault();
                 
-                // Basic form validation
                 let isValid = true;
                 const requiredFields = form.querySelectorAll('[required]');
                 
@@ -104,7 +89,6 @@ document.addEventListener('DOMContentLoaded', function() {
                     }
                 });
                 
-                // Check if a donation value is selected
                 const valueButtons = form.closest('.donation-form').querySelectorAll('.value-btn.active');
                 if (valueButtons.length === 0) {
                     isValid = false;
@@ -112,15 +96,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
                 
                 if (isValid) {
-                    // Simulate form submission
                     alert('Obrigado pela sua doação! Em um ambiente real, este formulário seria enviado para processamento.');
                     form.reset();
                     
-                    // Reset value buttons
                     const allValueButtons = form.closest('.donation-form').querySelectorAll('.value-btn');
                     allValueButtons.forEach(btn => btn.classList.remove('active'));
                     
-                    // Hide custom input if it exists
                     const customInput = form.closest('.donation-form').querySelector('.custom-value-input');
                     if (customInput) {
                         customInput.style.display = 'none';
@@ -130,7 +111,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Máscara para CPF
     const cpfInputs = document.querySelectorAll('input[name="cpf"]');
     
     if (cpfInputs.length > 0) {
@@ -155,7 +135,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Máscara para telefone
     const phoneInputs = document.querySelectorAll('input[name="phone"]');
     
     if (phoneInputs.length > 0) {

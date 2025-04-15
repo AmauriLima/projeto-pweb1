@@ -1,8 +1,5 @@
-/* Estilos da Página de Doações */
-
-/* Banner da Página */
 .page-banner {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/api/placeholder/1920/400') center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://placehold.co/1920x400') center/cover no-repeat;
   padding: 5rem 0;
   text-align: center;
   color: var(--white-color);
@@ -19,7 +16,6 @@
   margin: 0 auto;
 }
 
-/* Por que Doar */
 .why-donate-section {
   padding: 5rem 0;
   background-color: var(--white-color);
@@ -61,7 +57,6 @@
   color: var(--primary-color);
 }
 
-/* Estatísticas de Impacto */
 .impact-stats-section {
   padding: 4rem 0;
   background-color: var(--primary-color);
@@ -91,7 +86,6 @@
   opacity: 0.9;
 }
 
-/* Formas de Doar */
 .donate-options-section {
   padding: 5rem 0;
   background-color: var(--light-grey);
@@ -277,7 +271,6 @@
   color: var(--primary-color);
 }
 
-/* Reconhecimento dos Doadores */
 .donors-recognition-section {
   padding: 5rem 0;
   background-color: var(--white-color);
@@ -357,7 +350,6 @@
   font-size: 0.9rem;
 }
 
-/* Histórias de Impacto */
 .impact-story {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -404,7 +396,6 @@
   transform: translateX(5px);
 }
 
-/* FAQ */
 .faq-section {
   padding: 5rem 0;
   background-color: var(--light-grey);
@@ -460,7 +451,6 @@
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-/* Newsletter */
 .newsletter-section {
   padding: 4rem 0;
   background-color: var(--primary-color);
@@ -495,7 +485,6 @@
   font-size: 1rem;
 }
 
-/* Responsividade */
 @media (max-width: 992px) {
   .impact-story {
     grid-template-columns: 1fr;

@@ -1,8 +1,5 @@
-/* Estilos para a Página de Contato */
-
-/* Banner da Página */
 .page-banner {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/api/placeholder/1920/300') center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://placehold.co/1920x300') center/cover no-repeat;
   padding: 4rem 0;
   text-align: center;
   color: var(--white-color);
@@ -13,7 +10,6 @@
   margin-bottom: 1rem;
 }
 
-/* Seção de Contato */
 .contact-section {
   padding: 5rem 0;
 }
@@ -38,7 +34,6 @@
   color: var(--dark-color);
 }
 
-/* Formulário de Contato */
 .contact-form .form-group {
   margin-bottom: 1.5rem;
 }
@@ -72,7 +67,6 @@
   box-shadow: 0 0 0 2px rgba(0, 102, 204, 0.1);
 }
 
-/* Informações de Contato */
 .info-item {
   display: flex;
   margin-bottom: 1.5rem;
@@ -132,7 +126,6 @@
   color: var(--white-color);
 }
 
-/* Seção do Mapa */
 .map-section {
   padding-bottom: 5rem;
 }
@@ -142,7 +135,6 @@
   width: 100%;
 }
 
-/* FAQ Section */
 .faq-section {
   padding: 5rem 0;
   background-color: var(--light-grey);
@@ -195,7 +187,6 @@
   padding-bottom: 1.5rem;
 }
 
-/* Responsividade */
 @media (max-width: 992px) {
   .page-banner h2 {
       font-size: 2.2rem;

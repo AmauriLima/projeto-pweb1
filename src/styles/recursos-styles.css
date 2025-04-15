@@ -1,8 +1,5 @@
-/* Estilos para a Página de Recursos */
-
-/* Hero da Página */
 .page-hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/api/placeholder/1920/400') center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://placehold.co/1920x400') center/cover no-repeat;
   padding: 5rem 0;
   color: var(--white-color);
   text-align: center;
@@ -22,7 +19,6 @@
   font-size: 1.2rem;
 }
 
-/* Biblioteca de Recursos */
 .resources-section {
   padding: 5rem 0;
 }
@@ -115,7 +111,6 @@
   margin-right: 0.3rem;
 }
 
-/* Ferramentas e Tutoriais */
 .tools-section {
   padding: 5rem 0;
   background-color: var(--light-grey);
@@ -184,7 +179,6 @@
   border-radius: 50px;
 }
 
-/* Publicações */
 .publications-section {
   padding: 5rem 0;
 }
@@ -253,7 +247,6 @@
   gap: 1rem;
 }
 
-/* Responsividade */
 
 @media (max-width: 992px) {
   .page-hero h1 {
